@@ -1,0 +1,156 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.book-selection{
+    position: absolute;
+    left: 65vh;
+    top: 10vh;
+}
+
+
+.book-selection table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.book-selection td, .book-selection th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+.book-selection tr:nth-child(even){background-color: #f2f2f2;}
+
+.book-selection tr:hover {background-color: #ddd;}
+
+.book-selection th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #72625c;
+    color: white;
+  }
+
+button{
+    margin: 5px;
+    padding: 8px 13px;
+    border: 0cm;
+    border-radius: 2px;
+    color: white;
+    font-weight: bold;
+}
+
+.read-btn{
+    background-image: linear-gradient(to top,rgb(22, 9, 136),rgb(34, 34, 224));
+}
+
+.read-btn:hover{
+    cursor: pointer;
+    background-image:none;
+    background-color: rgb(34, 34, 224);
+}
+
+.update-btn{
+    background-image: linear-gradient(to top,rgb(214, 120, 32),rgb(231, 170, 39));
+}
+
+.update-btn:hover{
+    cursor: pointer;
+    background-image:none;
+    background-color: rgb(231, 170, 39);
+}
+
+.delete-btn{
+    background-image: linear-gradient(to top,rgb(182, 13, 13),rgb(236, 50, 26));
+}
+
+.delete-btn:hover{
+    cursor: pointer;
+    background-image:none;
+    background-color: rgb(236, 50, 26);
+}
+
+.add-btn{
+    background-image: linear-gradient(to top,rgb(26, 153, 32),rgb(102, 224, 54));
+    padding: 10px 14px;
+}
+
+.add-btn:hover{
+    cursor: pointer;
+    background-image:none;
+    background-color: rgb(102, 224, 54);
+}
+
+.modal{
+    position: fixed;
+    background-color: #72625c;
+    color: rgb(22, 21, 21);
+    text-align: left;
+    top: 0px;
+    right: -700px;
+    width: 70vh;
+    height: 100vh;
+    transition: 1s;
+    
+}
+
+.open{
+    transition: 1s;
+    right:0px;
+}
+
+
+.img-container{
+    position: relative;
+    background-color: aliceblue;
+    top: 20px;
+    left: 10px;
+    width: 300px;
+    height: 380px;
+    border: 2px solid rgb(114, 110, 110);
+    
+}
+
+.img-container img{
+    position: relative;
+    width: 300px;
+    height: 380px;
+    object-fit: fill;
+}
+
+
+.book-title{
+    padding: 20px 20px 3px;
+}
+
+.book-description{
+    background-color:#caa699;
+    margin: 10px 50px 20px 20px;
+    border-radius: 3px;
+    padding: 20px;
+    line-height: 1.5;
+    font-size: large;
+}
+
+.close-modal{
+    float: right;
+    color: black;
+}
+
+.ratings-container{
+    position: relative;
+    border-radius: 3px;
+    bottom: 650px;
+    left: 350px;
+    width: 300px;
+    height: 219px;
+    padding: 1px;
+    text-align: center;
+    background-color: #caa699;
+}
+
+.rating-button{
+    color: black;
+    margin-top: 50px;
+    min-width: 40px;
+}
